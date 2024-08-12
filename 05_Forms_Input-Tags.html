@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <h1>Student Admission Form</h1>
+    <form action="backend.php">
+        <div>
+            Name:    <input type="text" name="studentName">        
+        </div>
+        <br>
+
+        <div>
+            MOB: <input type="number" name="MOB" id="">
+        </div>
+        <br>
+
+        <div>
+            Date: <input type="date" name="date" id="">
+        </div>
+        <br>
+
+        <div>
+            Email: <input type="email" name="email" id="">
+        </div>
+        <br>
+
+        <div>
+            gender: Male <input type="radio" name="gender" id=""> Female <input type="radio" name="gender" id="">
+        </div>
+        <br>
+
+        <div>
+            Food Order: Italian <input type="checkbox" name="Italian" id=""> Indian <input type="checkbox" name="Indian" id=""> Chinese <input type="checkbox" name="Chinese" id=""> South-Indian <input type="checkbox" name="South-Indian" id="">
+        </div>
+        <br>
+
+        <div>
+            Address: <textarea name="address" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            Favourite Course: <select name="course" id="">
+                <option value="course">JAVA</option>
+                <option value="course">C++</option>
+                <option value="course" selected>PYTHON</option>
+                <option value="course">ML</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            Upload your File: <input type="file" name="file" id="" accept="image/*">
+        </div>
+        <br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+    
+    </form>
+</body>
+</html>
