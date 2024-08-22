@@ -1,0 +1,30 @@
+*{
+    margin: 5px;
+    padding: 5px;
+}
+body{
+    background-color: whitesmoke;
+}
+p{
+    color: tomato;
+}
+
+#uniptag{
+    color: dodgerblue;
+}
+
+.comonptag{
+    color: burlywood;
+}
+
+h1, p{
+    color: gray;
+}
+
+div p{
+    background-color: aquamarine;
+}
+
+div>p{
+    font-size: xx-large;
+}

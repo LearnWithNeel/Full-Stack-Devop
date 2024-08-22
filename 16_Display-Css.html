@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display in Css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .test1{
+            display: inline-block;
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        p{
+            /* display: block; */
+            margin-block-start: 1em; 
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        .test2{
+            background-color:bisque;           
+            
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Property</h1>
+    <!-- block Element -->
+    <p class="test1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magnam.</p>
+    <p class="test1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magnam.</p>
+
+    <!-- Inline Element -->
+    <span class="test2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, autem!</span>
+    <span class="test2">Lorem ipsum dolor sit amet,</span>
+    <p class="test1">Deserunt, autem!</p>
+</body>
+</html>

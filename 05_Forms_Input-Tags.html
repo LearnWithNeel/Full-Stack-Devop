@@ -14,7 +14,7 @@
         <br>
 
         <div>
-            MOB: <input type="number" name="MOB" id="">
+            MOB: <input type="text" name="MOB" id="" maxlength="10" onkeypress="return event.charCode>=48 && event.charCode<=57">
         </div>
         <br>
 
@@ -29,17 +29,12 @@
         <br>
 
         <div>
+            Password: <input type="password" name="password" id="" maxlength="8">
+        </div>
+        <br>
+
+        <div>
             gender: Male <input type="radio" name="gender" id=""> Female <input type="radio" name="gender" id="">
-        </div>
-        <br>
-
-        <div>
-            Food Order: Italian <input type="checkbox" name="Italian" id=""> Indian <input type="checkbox" name="Indian" id=""> Chinese <input type="checkbox" name="Chinese" id=""> South-Indian <input type="checkbox" name="South-Indian" id="">
-        </div>
-        <br>
-
-        <div>
-            Address: <textarea name="address" id="" cols="30" rows="10"></textarea>
         </div>
         <br>
 
@@ -50,6 +45,16 @@
                 <option value="course" selected>PYTHON</option>
                 <option value="course">ML</option>
             </select>
+        </div>
+        <br>
+
+        <div>
+            Food Order: Italian <input type="checkbox" name="Italian" id=""> Indian <input type="checkbox" name="Indian" id=""> Chinese <input type="checkbox" name="Chinese" id=""> South-Indian <input type="checkbox" name="South-Indian" id="">
+        </div>
+        <br>
+
+        <div>
+            Address: <br><textarea name="address" id="" cols="30" rows="10" maxlength="250"></textarea>
         </div>
         <br>
 
