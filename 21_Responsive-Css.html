@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Media Query</title>
+    <style>
+      html {
+        font-size: 20px;
+      }
+      .container {
+        border: 2px solid black;
+        display: none;
+      }
+
+      /* Max-width for mobile devices about 688px */
+      @media only screen and (max-width: 688px) {
+        #box-1 {
+          display: block;
+          background-color: aquamarine;
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+
+      /* max width for tablet devices about 992px */
+      @media only screen and (min-width: 600px) and (max-width: 992px) {
+        #box-2 {
+          display: block;
+          background-color: lightcoral;
+          color: aqua;
+          text-align: center;
+        }
+      }
+
+      /* max-width for pc/monitors about 1312px */
+      @media only screen and (min-width:992px) and (max-width: 1312px){
+        #box-3 {
+            display: block;
+            background-color: dodgerblue;
+            color: whitesmoke;
+            text-align: center;
+        }
+      }
+      /* min-width for ultrawide monitors about 1312px */
+      @media only screen and (min-width: 1312px) {
+        #box-4 {
+            display: block;
+            background-color: lightseagreen;
+            color: burlywood;
+            text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="box-1">This is Mobile</div>
+    <div class="container" id="box-2">This is Tablet</div>
+    <div class="container" id="box-3">This is PC/Monitors</div>
+    <div class="container" id="box-4">This is UltraWide Screens</div>
+  </body>
+</html>

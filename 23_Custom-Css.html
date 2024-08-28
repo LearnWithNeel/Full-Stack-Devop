@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Variables and properties in Css</title>
+    <style>
+        :root{
+            /* defiend here will be accessible everywhere */
+            --different-color:rgb(146, 74, 74);
+        }
+        .container{
+            /* Custom Variable as "--different-color" can only be access only within this block only*/
+            background-color: var(--different-color);
+        }
+        p{
+            font-size: xx-large;
+            font-weight: 600;
+            color: var(--different-color);
+        }   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Frontend</h1>
+    </div>
+    <div class="container">
+        <h1>This is Backend</h1>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, molestias!</p>
+</body>
+</html>

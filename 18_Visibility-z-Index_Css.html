@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility & z-Index</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 120px;
+        border: 2px solid black;
+      }
+
+      .box1 {
+        height: 60px;
+        width: 60px;
+        border: 2px solid black;
+      }
+      #red {
+        position: relative;
+        background-color: red;
+        z-index: 100;
+      }
+      #green {
+        position: relative;
+        /* can be used for stacking of element */
+        top: -45px;
+        left: 45px;
+        background-color: green;
+        /* it will make the element invisible but still occupy space */
+        /* visibility: hidden; */
+        /* it will make the element invisible but still don't occupy space */
+        /* display: none; */
+      }
+      #yellow {
+        position: relative;
+        z-index: 100;
+        background-color: yellow;
+      }
+      #gray {
+        position: relative;
+        z-index: 100;
+        top: -205px;
+        left: 45px;
+        background-color: gray;
+      }
+      #blue {
+        position: relative;
+        top: -80px;
+        left: 90px;
+        z-index: 100;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="red"></div>
+    <div class="box" id="green">
+      <div class="box1" id="yellow"></div>
+    </div>
+    <div class="box1" id="gray"></div>
+    <div class="box" id="blue"></div>
+  </body>
+</html>

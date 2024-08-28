@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition in Css</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        background-color: firebrick;
+        /* transition: background-color;
+        transition-duration: 0.9s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 2s; */
+
+        /* Shorthand Property Transitions: Property_Name duration timing_function delay */
+        /* transition: background-color 0.9s ease-in-out 2s; */
+        transition: all 0.9s ease-in-out 2s;
+      }
+      .container:hover {
+        background-color: dodgerblue;
+        font-size: large;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Tutorial on Transitions</div>
+  </body>
+</html>

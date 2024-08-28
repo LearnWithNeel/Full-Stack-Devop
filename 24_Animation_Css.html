@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation in Css</title>
+    <style>
+      .container {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background-color: red;
+        border: 2px solid black;
+        animation-name: loading;
+        animation-duration: 10s;
+        /* animation-delay: 3s; */
+        /* animation-iteration-count: 2; */
+        /* animation-direction: reverse; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-fill-mode: forwards; */
+
+        /* Short Hand Property  animation: property_name duration timing_fuction delay interation fill_mode*/
+        /* animation: loading 3s linear 3s infinite forwards; */
+      }
+
+      @keyframes loading {
+        from {
+            top: 0px;
+          background-color: red;
+        }
+        to {
+            top: 200px;
+          background-color: dodgerblue;
+        }
+
+        /* 0%{
+            background-color: red;
+        }
+        25%{
+            background-color: purple;
+        }
+        50%{
+            background-color: green;
+        }
+        75%{
+            background-color: brown;
+        }
+        100%{
+            background-color: dodgerblue;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <div class="container"></div>
+  </body>
+</html>

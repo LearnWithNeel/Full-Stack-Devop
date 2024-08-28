@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property in Html</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .container{
+            border: 2px solid black;
+            background-color: dodgerblue;
+            height: 100vh;
+        }
+
+        .box{
+            font-size: 26px;
+            color: firebrick;
+            height: 200px;
+            width: 200px; 
+            border: 2px solid ghostwhite;
+            font-weight: 600;
+            display: inline-block;
+        }
+        #box1{
+            /* no changes will be feeled */
+            /* position: static; */
+            /* By using this changes can be feeled */
+            position: relative;
+            top: 39px;
+            /* after this the next will be overlayed on it */
+            /* position: absolute; */
+           
+        }
+        #box2{
+            /* it will wont change its position */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        #box3{
+            /* it will stick to any particular position provided */
+            top:10px;
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">This is Box 1</div>
+        <div class="box" id="box2">This is Box 2</div>
+        <div class="box" id="box3">This is Box 3</div>
+        <div class="box" id="box4">This is Box 4</div>
+    </div>
+</body>
+</html>

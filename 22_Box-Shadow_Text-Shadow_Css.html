@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow & Text Shadow in Html</title>
+    <style>
+      .container {
+        display: inline-block;
+        border: 2px solid black;
+        margin: 10px;
+      }
+      .box {
+        background-color: dodgerblue;
+        margin: 30px 10px 30px 10px;
+        padding: 30px 20px 30px 30px;
+      }
+      #box-1 {
+        /* offset-x offset-y blur-radius spread radius color */
+        box-shadow: 10px 15px 10px 30px rgb(113, 179, 245);
+        text-shadow: 10px 5px white ;
+      }
+ 
+      #box-2 {
+        box-shadow: 10px -15px 10px rgb(113, 179, 245);
+        text-shadow: 10px -5px white ;
+      }
+
+      #box-3 {
+        box-shadow: -10px 15px 10px rgb(113, 179, 245);
+        text-shadow: -10px 5px white ;
+      }
+
+      #box-4 {
+        box-shadow: -10px -15px 10px rgb(113, 179, 245);
+        text-shadow: -10px -5px white ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">
+        <h1>Box-1</h1>
+        <h3>Box Shadow & Text Shadow</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+          asperiores.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box" id="box-2">
+        <h1>Box-2</h1>
+        <h3>Box Shadow & Text Shadow</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+          asperiores.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box" id="box-3">
+        <h1>Box-3</h1>
+        <h3>Box Shadow & Text Shadow</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+          asperiores.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box" id="box-4">
+        <h1>Box-4</h1>
+        <h3>Box Shadow & Text Shadow</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+          asperiores.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

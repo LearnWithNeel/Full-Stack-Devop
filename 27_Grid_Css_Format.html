@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Format</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .container{
+            height: 100vh;
+            display: grid;
+            background-color: lightblue;
+            padding: 15px;
+            grid-gap: 20px;
+            grid-template-areas: 'navbar navbar navbar navbar' 'aside section section section' 'footer footer footer footer';
+            
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #section{
+            grid-area: section;
+        }
+        footer{
+            grid-area: footer;
+        }
+
+        .box{
+            background-color: burlywood;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="navbar">Home About Contact</div>
+      <div class="box" id="aside">Lorem ipsum dolor sit amet.</div>
+      <div class="box" id="section">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut cumque,
+        voluptas facere voluptate maxime nesciunt harum velit neque officiis! Ea
+        sed nihil eum dolore illum quos nobis nostrum unde perferendis nesciunt
+        hic non voluptate dolorem alias adipisci molestias ab inventore expedita
+        minus, aperiam pariatur ipsam. Sit iusto pariatur vero? Dignissimos.
+      </div>
+      <footer class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, atque.
+      </footer>
+    </div>
+  </body>
+</html>
